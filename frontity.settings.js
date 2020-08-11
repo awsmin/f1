@@ -14,10 +14,6 @@ const settings = {
         "theme": {
           "menu": [
             [
-              "Home",
-              "/"
-            ],
-            [
               "About",
               "/about/"
             ],

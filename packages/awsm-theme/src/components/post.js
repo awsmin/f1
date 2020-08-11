@@ -29,8 +29,8 @@ const Post = ({ state, actions, libraries }) => {
 
   // Load the post, but only if the data is ready.
   return data.isReady ? (
-    <Container>
-      <div>
+    <ArticleContainer>
+      <div className="post-title">
         <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
 
         {/* Only display author and date on posts */}
@@ -61,23 +61,26 @@ const Post = ({ state, actions, libraries }) => {
       <Content>
         <Html2React html={post.content.rendered} />
       </Content>
-    </Container>
+    </ArticleContainer>
   ) : null;
 };
 
 export default connect(Post);
 
-const Container = styled.div`
-  width: 800px;
-  margin: 0;
-  padding: 24px;
+const ArticleContainer = styled.div`
+  width:100%;
+  max-width:1035px;
+  margin: 0 auto;
+  margin-top:6.25rem;
+  padding-right: 15px;
+  padding-left: 15px; 
+  .post-title {
+    text-align:center;    
+  }
 `;
 
 const Title = styled.h1`
-  margin: 0;
-  margin-top: 24px;
-  margin-bottom: 8px;
-  color: rgba(12, 17, 43);
+  margin-bottom: 1.2rem;
 `;
 
 const StyledLink = styled(Link)`
@@ -105,11 +108,13 @@ const Content = styled.div`
   word-break: break-word;
 
   * {
-    max-width: 100%;
+    max-width: 771px;
+    width: 100%;
+    margin:0 auto;
   }
 
   p {
-    line-height: 1.6em;
+    margin-bottom:1.5rem;
   }
 
   img {

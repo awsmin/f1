@@ -1,19 +1,18 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import Link from "./link";
+import Link from "../link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
 
 const Header = ({ state }) => {
   return (
     <>
-      <Container>
+      <BrandContainer>
         <StyledLink link="/">
-          <Title>{state.frontity.title}</Title>
+          <Title><span>F/ONE</span> by awsm</Title>
         </StyledLink>
-        <Description>{state.frontity.description}</Description>
         <MobileMenu />
-      </Container>
+      </BrandContainer>
       <Nav />
     </>
   );
@@ -22,25 +21,17 @@ const Header = ({ state }) => {
 // Connect the Header component to get access to the `state` in it's `props`
 export default connect(Header);
 
-const Container = styled.div`
-  width: 848px;
-  max-width: 100%;
+const BrandContainer = styled.div`
   box-sizing: border-box;
-  padding: 24px;
-  color: #fff;
+  color: var(--brand);
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 `;
 
-const Title = styled.h2`
+const Title = styled.div`
   margin: 0;
-  margin-bottom: 16px;
-`;
-
-const Description = styled.h4`
-  margin: 0;
-  color: rgba(255, 255, 255, 0.7);
+  span {
+    font-weight:800;
+  }
 `;
 
 const StyledLink = styled(Link)`

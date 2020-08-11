@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import Link from "./link";
+import Link from "../link";
 
 /**
  * Navigation Component
@@ -29,7 +29,6 @@ export default connect(Nav);
 const NavContainer = styled.nav`
   list-style: none;
   display: flex;
-  width: 848px;
   max-width: 100%;
   box-sizing: border-box;
   padding: 0 24px;
@@ -44,7 +43,7 @@ const NavContainer = styled.nav`
 const NavItem = styled.div`
   padding: 0;
   margin: 0 16px;
-  color: #fff;
+  color: var(--brand);
   font-size: 0.9em;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -52,11 +51,14 @@ const NavItem = styled.div`
   & > a {
     display: inline-block;
     line-height: 2em;
-    border-bottom: 2px solid;
-    border-bottom-color: transparent;
+    color:var(--black);
+    transition: all 0.3s ease;
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
-      border-bottom-color: #fff;
+      color:var(--brand);
+    }
+    &:hover {
+      color:var(--brand);
     }
   }
 
