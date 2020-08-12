@@ -6,9 +6,25 @@ import Pagination from "./pagination";
 const List = ({ state }) => {
   // Get the data of the current list.
   const data = state.source.get(state.router.link);
+  let title = 'Blog';
+  if ( data.isAwsmJobOpeningsArchive ) {
+    title = 'Career';
+  }
 
   return (
     <Container>
+      {/* If the list is a blog posts, we render a title. */}
+      {data.isPostArchive && (
+        <Header>
+          {title}
+        </Header>
+      )}
+        {/* If the list is a AWSM Job career page, we render a title. */}
+      {data.isAwsmJobOpeningsArchive && (
+        <Header>
+          {title}
+        </Header>
+      )}
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
         <Header>
@@ -39,13 +55,14 @@ export default connect(List);
 
 const Container = styled.section`
   width: 800px;
-  margin: 0;
-  padding: 24px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
   list-style: none;
 `;
 
-const Header = styled.h3`
-  font-weight: 300;
-  text-transform: capitalize;
-  color: rgba(12, 17, 43, 0.9);
+const Header = styled.h1`
+  text-align:center;
+  margin-bottom:3rem;
+
 `;
