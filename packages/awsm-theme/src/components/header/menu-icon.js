@@ -6,6 +6,7 @@ export const HamburgerIcon = ({ size, color }) => {
       height={size}
       width={size}
       color={color}
+      className="opensvg"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -26,6 +27,7 @@ export const CloseIcon = ({ size, color }) => {
       width={size}
       viewBox="0 0 24 24"
       color={color}
+      className="closesvg"
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>Close Menu</title>

@@ -47,9 +47,10 @@ const MenuLink = styled(Link)`
   font-size: 20px;
   text-align: center;
   padding: 1.2rem 0;
-
+  color:var(--white);
   &:hover,
   &:focus {
+    color:var(--black);
     background-color: rgba(0, 0, 0, 0.05);
   }
   /* styles for active link */

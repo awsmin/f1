@@ -71,7 +71,6 @@ const ArticleContainer = styled.div`
   width:100%;
   max-width:1035px;
   margin: 0 auto;
-  margin-top:6.25rem;
   padding-right: 15px;
   padding-left: 15px; 
   .post-title {

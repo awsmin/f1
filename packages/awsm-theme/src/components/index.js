@@ -2,11 +2,20 @@ import React from "react";
 import { Global, css, connect, styled, Head } from "frontity";
 import Switch from "@frontity/components/switch";
 import Header from "./header/header";
+import Footer from "./footer/footer";
 import List from "./list";
 import Post from "./post";
+import HomePage from "./pages/homepage";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
+import customCss from './styles/main.css';
+import gutenbergStyle from "./styles/gutenberg/style.css";
+import gutenbergTheme from "./styles/gutenberg/theme.css";
+// Bootstrap style
+const CustomStyles = () => (
+  <Global styles={css(customCss)} />
+);
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -27,6 +36,9 @@ const Theme = ({ state }) => {
 
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
+      <Global styles={css(gutenbergStyle)} />
+      <Global styles={css(gutenbergTheme)} />
+      <CustomStyles />
       <Global styles={globalStyles} />
 
       {/* Add the header of the site. */}
@@ -40,10 +52,14 @@ const Theme = ({ state }) => {
         <Switch>
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
+          <HomePage when={data.isHome} /> 
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
         </Switch>
       </Main>
+      <FooterContainer>
+        <Footer/>
+      </FooterContainer>      
     </>
   );
 };
@@ -54,6 +70,7 @@ const globalStyles = css`
   :root {
     --brand: #5B3BE8;
     --black: #000000;
+    --white: #ffffff;
     --bodycolor: #343434;
   }
   body {
@@ -68,6 +85,9 @@ const globalStyles = css`
   a:visited {
     color: inherit;
     text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
   h1, h2, h3, h4, h5, h6 {
     color:var(--black);
@@ -75,6 +95,20 @@ const globalStyles = css`
   p {
     line-height:24px;
     font-size:18px;
+  }
+  .container {
+    max-width: 1200px;
+    width:100%;
+    margin: 0 auto;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .section{
+    padding: 34px 0;
+    @media (min-width: 992px) {
+      padding: 50px 0;
+    }
   }
 `;
 
@@ -87,6 +121,12 @@ const HeadContainer = styled.div`
   padding-top: 2.75rem;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom:6.25rem;
+`;
+const FooterContainer = styled.div`
+  display: flex;
+  width:100%;
+  background:var(--brand);
 `;
 
 const Main = styled.div`
