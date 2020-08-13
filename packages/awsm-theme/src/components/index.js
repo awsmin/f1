@@ -76,7 +76,7 @@ const globalStyles = css`
   body {
     margin: 0;
     color:var(--bodycolor);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
       "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-feature-settings: "kern";
     -webkit-font-smoothing: antialiased;
