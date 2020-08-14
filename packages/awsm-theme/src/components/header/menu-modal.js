@@ -55,9 +55,8 @@ const MenuLink = styled(Link)`
   }
   /* styles for active link */
   &[aria-current="page"] {
-    color: yellow;
+    color: var(--black);
     font-weight: bold;
-    /* border-bottom: 4px solid yellow; */
   }
 `;
 

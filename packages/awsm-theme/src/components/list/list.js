@@ -39,13 +39,32 @@ const List = ({ state }) => {
           Author: <b>{decode(state.source.author[data.id].name)}</b>
         </Header>
       )}
-
+    
       {/* Iterate over the items of the list. */}
-      {data.items.map(({ type, id }) => {
-        const item = state.source[type][id];
-        // Render one Item component for each one.
-        return <Item key={item.id} item={item} />;
-      })}
+      {data.isAwsmJobOpeningsArchive && (
+          <section className="section job-listing">
+            <div className="container">
+              <div className="row">
+              {/* Iterate over the items of the list. */}
+              {data.items.map(({ type, id }) => {
+                const item = state.source[type][id];
+                // Render one Item component for each one.
+                return <Item key={item.id} item={item} />;
+              })}
+            </div>
+            </div>
+          </section>
+      )}
+      {!data.isAwsmJobOpeningsArchive && (
+          <>
+          {data.items.map(({ type, id }) => {
+              const item = state.source[type][id];
+              // Render one Item component for each one.
+              return <Item key={item.id} item={item} />;
+            })}
+          </>
+      )}
+      
       <Pagination />
     </Container>
   );
@@ -54,7 +73,7 @@ const List = ({ state }) => {
 export default connect(List);
 
 const Container = styled.section`
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
