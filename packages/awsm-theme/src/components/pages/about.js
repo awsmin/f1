@@ -1,18 +1,13 @@
 import React, { useEffect } from "react";
 import { connect, styled } from "frontity";
-import Link from "./link";
-import List from "./list";
-import FeaturedMedia from "./featured-media";
+import Link from "../link";
+import List from "../list";
 
-const Post = ({ state, actions, libraries }) => {
+const Page = ({ state, actions, libraries }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
   // Get the data of the post.
-  const post = state.source[data.type][data.id];
-  // Get the data of the author.
-  const author = state.source.author[post.author];
-  // Get a human readable date.
-  const date = new Date(post.date);
+  const page = state.source[data.type][data.id];
 
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
@@ -31,71 +26,29 @@ const Post = ({ state, actions, libraries }) => {
   return data.isReady ? (
     <ArticleContainer>
       <div className="post-title">
-        <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-
-        {/* Only display author and date on posts */}
-        {data.isPost && (
-          <div>
-            {author && (
-              <StyledLink link={author.link}>
-                <Author>
-                  By <b>{author.name}</b>
-                </Author>
-              </StyledLink>
-            )}
-            <DateWrapper>
-              {" "}
-              on <b>{date.toDateString()}</b>
-            </DateWrapper>
-          </div>
-        )}
+        <Title dangerouslySetInnerHTML={{ __html: page.title.rendered }} />
       </div>
-
-      {/* Look at the settings to see if we should include the featured image */}
-      {state.theme.featured.showOnPost && (
-        <FeaturedMedia id={post.featured_media} />
-      )}
 
       {/* Render the content using the Html2React component so the HTML is processed
        by the processors we included in the libraries.html2react.processors array. */}
       <Content>
-        <Html2React html={post.content.rendered} />
+        <Html2React html={page.content.rendered} />
       </Content>
     </ArticleContainer>
   ) : null;
 };
 
-export default connect(Post);
+export default connect(Page);
 
 const ArticleContainer = styled.div`
   width:100%;
-  max-width:1035px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px; 
   .post-title {
     text-align:center;    
   }
 `;
 
 const Title = styled.h1`
-  margin-bottom: 1.2rem;
-`;
-
-const StyledLink = styled(Link)`
-  padding: 15px 0;
-`;
-
-const Author = styled.p`
-  color: rgba(12, 17, 43, 0.9);
-  font-size: 0.9em;
-  display: inline;
-`;
-
-const DateWrapper = styled.p`
-  color: rgba(12, 17, 43, 0.9);
-  font-size: 0.9em;
-  display: inline;
+  margin-bottom: 3.2rem;
 `;
 
 /**
@@ -104,13 +57,6 @@ const DateWrapper = styled.p`
  */
 const Content = styled.div`
   word-break: break-word;
-
-  * {
-    max-width: 771px;
-    width: 100%;
-    margin:0 auto;
-  }
-
   p {
     margin-bottom:1.5rem;
   }
@@ -164,7 +110,9 @@ const Content = styled.div`
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color:var(--white);
+    width:100%;
+    height: 3rem;
+    background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 4px;
@@ -222,4 +170,37 @@ const Content = styled.div`
       margin-right: 24px;
     }
   }
+  /**About Block**/ 
+    .about-highlight {
+      padding-bottom:2rem;
+      .wp-block-group__inner-container {
+        max-width:571px;
+      }      
+    }
+    .about-services {
+      background:#F8F8FA;
+      padding-top: 34px;
+      padding-bottom:34px;
+      @media (min-width: 992px) {
+        padding-top: 75px;
+        padding-bottom:75px;
+      }
+      .wp-block-group__inner-container {
+        .about-services-grid {    
+          .wp-block-image {
+            width: 62px!important;
+            height: 62px;
+            margin: 0 auto;
+          }
+          h5 {
+            margin-bottom:1rem;
+            margin-top:1rem;
+          }
+          p {
+            position:relative;
+          }
+        }
+      }
+    }
+
 `;

@@ -62,7 +62,7 @@ const Container = styled.footer`
   justify-content:center;
   margin: 0 auto;
   padding-top:4rem;
-  padding-bottom:6rem;
+  padding-bottom:4rem;
   padding-right: 15px;
   padding-left: 15px;
   color:var(--white);

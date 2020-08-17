@@ -5,6 +5,7 @@ import Header from "./header/header";
 import Footer from "./footer/footer";
 import List from "./list";
 import Post from "./post";
+import Page from "./pages/page";
 import HomePage from "./pages/homepage";
 import Jobs from "./pages/jobs";
 import Loading from "./loading";
@@ -55,6 +56,7 @@ const Theme = ({ state }) => {
           <List when={data.isArchive} />
           <HomePage when={data.isHome} /> 
           <Jobs when={data.isAwsmJobOpenings} />
+          <Page when={data.isPage} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
         </Switch>
