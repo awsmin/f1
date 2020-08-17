@@ -66,7 +66,6 @@ const Container = styled.footer`
   padding-right: 15px;
   padding-left: 15px;
   color:var(--white);
-  margin-top: auto;
   .footer-widget {
     margin-bottom:1rem;
     .widget-title {

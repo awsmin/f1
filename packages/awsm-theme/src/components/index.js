@@ -136,6 +136,7 @@ const FooterContainer = styled.div`
   display: flex;
   width:100%;
   background:var(--brand);
+  margin-top: auto;
 `;
 
 const Main = styled.div`
