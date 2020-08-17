@@ -55,7 +55,7 @@ const Footer = ({ state }) => {
 // Connect the Header component to get access to the `state` in it's `props`
 export default connect(Footer);
 
-const Container = styled.footer`
+const Container = styled.footer`   
   display: flex;
   width:100%;
   max-width:1200px;
@@ -66,6 +66,7 @@ const Container = styled.footer`
   padding-right: 15px;
   padding-left: 15px;
   color:var(--white);
+  margin-top: auto;
   .footer-widget {
     margin-bottom:1rem;
     .widget-title {

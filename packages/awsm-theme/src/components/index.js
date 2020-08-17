@@ -100,6 +100,11 @@ const globalStyles = css`
     line-height:24px;
     font-size:18px;
   }
+  #root {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+  }
   .container {
     max-width: 1200px;
     width:100%;
