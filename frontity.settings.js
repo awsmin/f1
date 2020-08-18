@@ -55,7 +55,6 @@ const settings = {
     "@frontity/html2react",
     "frontity-contact-form-7",
     "@awsmin/frontity-wp-job-openings"
-    
   ]
 };
 
