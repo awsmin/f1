@@ -1,15 +1,15 @@
 const settings = {
-  "name": "awsm-theme",
+  "name": "AWSM F One",
   "state": {
     "frontity": {
       "url": "https://staging2.awsm.in/fone",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "title": "AWSM F One - Frontity theme",
+      "description": "A simple theme for Frontity WordPress development"
     }
   },
   "packages": [
     {
-      "name": "awsm-theme",
+      "name": "f-one",
       "state": {
         "theme": {
           "menu": [
