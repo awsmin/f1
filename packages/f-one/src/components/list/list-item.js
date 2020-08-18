@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import Link from "../link";
+import Link from "@frontity/components/link";
 import FeaturedMedia from "../featured-media";
 import Image from "@frontity/components/image";
 /**

@@ -1,6 +1,6 @@
 import React from "react";
 import { styled, connect } from "frontity";
-import Link from "../link";
+import Link from "@frontity/components/link";
 
 const MenuModal = ({ state }) => {
   const { menu } = state.theme;

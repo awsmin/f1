@@ -37,7 +37,8 @@ const settings = {
           "featured": {
             "showOnList": true,
             "showOnPost": true
-          }
+          },
+          autoPrefetch: "in-view"
         }
       }
     },

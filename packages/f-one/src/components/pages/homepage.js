@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect, styled } from "frontity";
-import Link from "../link";
+import Link from "@frontity/components/link";
 import List from "../list";
 //import Image from "@frontity/components/image";
 
@@ -24,15 +24,6 @@ const HomePage = ({ state, actions, libraries }) => {
   // Load the post, but only if the data is ready.
   return data.isReady ? (        
     <Content>
-      {/* <section className="section banner">
-        <div className="container">
-          <div className="row justify-content-center align-items-center">
-            <div className="col-12 col-lg-7 banner-heading">
-              hello
-            </div>
-          </div>
-        </div>
-      </section> */}
       <Html2React html={homepage.content.rendered} />
     </Content>
   ) : null;
