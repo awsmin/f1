@@ -56,8 +56,6 @@ const Post = ({ state, actions, libraries }) => {
         <FeaturedMedia id={post.featured_media} />
       )}
 
-      {/* Render the content using the Html2React component so the HTML is processed
-       by the processors we included in the libraries.html2react.processors array. */}
       <Content>
         <Html2React html={post.content.rendered} />
       </Content>
