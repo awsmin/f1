@@ -6,21 +6,14 @@ import Link from "@frontity/components/link";
 const LinkManipulate = (props) => {
   const { state,
     actions,
-    onClick: onClickProp, } = useConnect();
-    console.log(props)
-    
-  // console.log(props)
+    onClick: onClickProp, } = useConnect();    
     if (props?.href) {
       props.link = '/'+props.href.match(/([^\/]*)\/*$/)[1];      
     }
     else {
       props.link = "#"
     }
-    const link = props.link
-  //const isExternal = props.link.startsWith("http");
-  useEffect(() => {
-      if (state.theme.autoPreFetch === "all") actions.source.fetch(link);
-  }, []);
+  const link = props.link
   const onClick = (event) => {
     // Do nothing if it's an external link
    // if (isExternal) return;
