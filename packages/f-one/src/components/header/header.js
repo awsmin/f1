@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import Link from "@frontity/components/link";
+import Link from "../link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
 
@@ -36,4 +36,9 @@ const Title = styled.div`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  color:var(--brand);
+  transition: all 0.3s ease;
+  &:hover {
+    color:var(--black);
+  }
 `;

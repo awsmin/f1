@@ -86,8 +86,7 @@ const globalStyles = css`
     -webkit-font-smoothing: antialiased;
   }
   a,
-  a:visited {
-    color: inherit;
+  a:visited {    
     text-decoration: none;
     &:hover {
       text-decoration: none;

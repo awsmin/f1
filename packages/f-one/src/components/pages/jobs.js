@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect, styled } from "frontity";
-import Link from "@frontity/components/link";
+import Link from "../link";
 import List from "../list";
 
 const Jobs = ({ state, actions, libraries }) => {

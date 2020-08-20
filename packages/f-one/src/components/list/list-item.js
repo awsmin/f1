@@ -137,7 +137,18 @@ const Article = styled.article`
       }
       .brand-btnhollow {        
         margin: auto auto 0 0;
-        
+        color:var(--brand);
+        transition: all .3s ease;
+        svg {
+          fill:var(--black);
+          transition: all .3s ease;
+        }
+        &:hover {
+          color:var(--black);
+          svg {
+            fill:var(--brand);
+          }
+        }
       }
       .awsm-job-specification-wrapper {
         margin-bottom:0.5rem;

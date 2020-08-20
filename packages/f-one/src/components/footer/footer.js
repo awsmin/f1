@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import Link from "@frontity/components/link";
+import Link from "../link";
 
  
 // simplest form (only email)
@@ -83,6 +83,7 @@ const Container = styled.footer`
         .widget-list-link {
           text-decoration:none;
           transition: all 0.3s ease;
+          color:var(--white);
           &:hover {
             color:var(--black);
           }
