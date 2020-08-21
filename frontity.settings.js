@@ -1,5 +1,5 @@
 const settings = {
-  "name": "AWSM F One",
+  "name": "f-one",
   "state": {
     "frontity": {
       "url": "https://staging2.awsm.in/fone/",

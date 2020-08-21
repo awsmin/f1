@@ -241,6 +241,9 @@ position:relative;
           color:var(--brand);
         }
       }
+      .wp-block-latest-posts__post-date {
+        color: rgb(69 78 86);
+      }
     }
   }
 }

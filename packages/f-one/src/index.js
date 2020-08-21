@@ -4,7 +4,7 @@ import iframe from "@frontity/html2react/processors/iframe";
 import links from "./processor/links";
 
 const awsmTheme = {
-  name: "awsm-theme",
+  name: "f-one",
   roots: {
     /**
      *  In Frontity, any package can add React components to the site.
@@ -19,9 +19,6 @@ const awsmTheme = {
      */
     theme: {
       menu: [],
-      colors: {
-        brand: "#4d6bee",
-      },
       isMobileMenuOpen: false,
       featured: {
         showOnList: false,
