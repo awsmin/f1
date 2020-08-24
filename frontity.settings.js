@@ -9,7 +9,7 @@ const settings = {
   },
   "packages": [
     {
-      "name": "f-one",
+      "name": "@awsmin/f-one",
       "state": {
         "theme": {
           "menu": [
