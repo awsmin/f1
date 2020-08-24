@@ -2,6 +2,10 @@
 
 A starter theme for Frontity
 
+**[View Demo](https://awsm-theme.vercel.app/)**
+
+**[Open in CodeSandbox](https://githubbox.com/awsmin/f-one)**
+
 ## Table of contents
 
 <!-- toc -->
