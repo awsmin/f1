@@ -1,19 +1,19 @@
 {
-  "name": "@awsmin/f-one",
+  "name": "@awsmin/f1",
   "version": "1.0.0",
   "description": "A starter theme for Frontity from AWSM",
   "keywords": [
     "frontity",
     "frontity-theme"
   ],
-  "homepage": "https://github.com/awsmin/f-one#readme",
+  "homepage": "https://github.com/awsmin/f1#readme",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/awsmin/f-one.git"
+    "url": "https://github.com/awsmin/f1.git"
   },
   "bugs": {
-    "url": "https://github.com/awsmin/f-one/issues"
+    "url": "https://github.com/awsmin/f1/issues"
   },
   "dependencies": {
     "@frontity/components": "^1.3.3",

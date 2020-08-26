@@ -38,6 +38,13 @@ const Container = styled.div`
 const Content = styled.div`
 width: 100%;
 position:relative;
+.wp-block-group__inner-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0px auto;
+}
 .hero-homepage {
   padding-bottom:34px;
   @media (min-width: 992px) {

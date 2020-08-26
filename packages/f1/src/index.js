@@ -3,8 +3,8 @@ import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
 import links from "./processor/links";
 
-const awsmTheme = {
-  name: "f-one",
+const awsmF1 = {
+  name: "f1",
   roots: {
     /**
      *  In Frontity, any package can add React components to the site.
@@ -51,4 +51,4 @@ const awsmTheme = {
   },
 };
 
-export default awsmTheme;
+export default awsmF1;

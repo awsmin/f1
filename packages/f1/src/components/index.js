@@ -11,13 +11,9 @@ import Jobs from "./pages/jobs";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
-import customCss from './styles/main.css';
+import BootstrapCss from './styles/bootstrap.css';
 import gutenbergStyle from "./styles/gutenberg/style.css";
 import gutenbergTheme from "./styles/gutenberg/theme.css";
-// Bootstrap style
-const CustomStyles = () => (
-  <Global styles={css(customCss)} />
-);
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -38,9 +34,9 @@ const Theme = ({ state }) => {
 
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
+      <Global styles={css(BootstrapCss)} />
       <Global styles={css(gutenbergStyle)} />
       <Global styles={css(gutenbergTheme)} />
-      <CustomStyles />
       <Global styles={globalStyles} />
 
       {/* Add the header of the site. */}
@@ -86,7 +82,8 @@ const globalStyles = css`
     -webkit-font-smoothing: antialiased;
   }
   a,
-  a:visited {    
+  a:visited {  
+    color:#fff;  
     text-decoration: none;
     &:hover {
       text-decoration: none;

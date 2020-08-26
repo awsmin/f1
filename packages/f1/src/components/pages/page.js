@@ -67,6 +67,10 @@ const Content = styled.div`
     margin-bottom:1.5rem;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom:1.8rem;
+  }
+
   img {
     width: 100%;
     object-fit: cover;
@@ -94,6 +98,14 @@ const Content = styled.div`
     border-left: 4px solid rgba(12, 17, 43);
     padding: 4px 16px;
   }
+  .wp-block-button, .wp-block-code, .wp-block-preformatted {
+    width:auto;
+    margin-bottom:2rem;
+  }
+  .wp-block-button__link {
+    color:var(--white);
+  }
+
 
   /* Input fields styles */
 
@@ -224,6 +236,7 @@ const Content = styled.div`
       }
     }
   }
+  /**Custom style for pages**/
   /**About Block**/ 
   .about-highlight {
     padding-bottom:2rem;
