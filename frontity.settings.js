@@ -38,7 +38,8 @@ const settings = {
             "showOnList": true,
             "showOnPost": true
           },
-          autoPrefetch: "in-view"
+          // Whether to auto-fetch links on a page. Values can be "no" | "all" | "in-view" | "hover"
+          autoPrefetch: "hover"
         }
       }
     },

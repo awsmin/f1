@@ -23,7 +23,7 @@ const awsmF1 = {
       featured: {
         showOnList: false,
         showOnPost: false,
-      },
+      }
     },
   },
   /**
