@@ -83,7 +83,6 @@ const globalStyles = css`
   }
   a,
   a:visited {  
-    color:#fff;  
     text-decoration: none;
     &:hover {
       text-decoration: none;
