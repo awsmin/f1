@@ -13,26 +13,11 @@ const settings = {
       "state": {
         "theme": {
           "menu": [
-            [
-              "About",
-              "/about/"
-            ],
-            [
-              "Services",
-              "/services/"
-            ],
-            [
-              "Career",
-              "/jobs/"
-            ],            
-            [
-              "Blog",
-              "/blog/"
-            ],
-            [
-              "Contact",
-              "/contact/"
-            ]
+            ["About", "/about/"],
+            ["Services", "/services/"],
+            ["Career", "/jobs/"],            
+            ["Blog", "/blog/"],
+            ["Contact", "/contact/"]
           ],
           "featured": {
             "showOnList": true,

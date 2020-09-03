@@ -4,7 +4,7 @@ import iframe from "@frontity/html2react/processors/iframe";
 import links from "./processor/links";
 
 const awsmF1 = {
-  name: "f1",
+  name: "@awsmin/f1",
   roots: {
     /**
      *  In Frontity, any package can add React components to the site.

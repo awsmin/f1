@@ -24,7 +24,7 @@ A starter theme for Frontity with support for common Gutenberg WordPress editor 
 ## Install
 
 ```sh
-npm i @awsm/f1
+npm i @awsmin/f1
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ The theme options can be specified in the `state.theme` property.
 
 ```javascript
 {
-  name: "@awsm/f1",
+  name: "@awsmin/f1",
   state: {
     theme: {
       menu: [

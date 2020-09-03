@@ -12,6 +12,9 @@
     "build": "frontity build",
     "serve": "frontity serve"
   },
+  "homepage": "https://github.com/awsmin/f1#readme",
+  "license": "GPL-2.0-or-later",
+  "author": "Awsm Innovations",
   "prettier": {},
   "dependencies": {
     "@awsmin/f1": "./packages/f1",
