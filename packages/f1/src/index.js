@@ -3,7 +3,7 @@ import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
 import links from "./processor/links";
 
-const awsmF1 = {
+const awsminF1 = {
   name: "@awsmin/f1",
   roots: {
     /**
@@ -51,4 +51,4 @@ const awsmF1 = {
   },
 };
 
-export default awsmF1;
+export default awsminF1;
