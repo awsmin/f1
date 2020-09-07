@@ -367,10 +367,12 @@ const Content = styled.div`
     } 
   }
   .hero-services {
-    padding-bottom:34px;
     max-width: 100%;
+    padding-top: 34px;
+    padding-bottom:34px;
     @media (min-width: 992px) {
-      padding-bottom:50px;
+      padding-top: 75px;
+      padding-bottom:75px;
     }
     .wp-block-columns {
       max-width: 100%;

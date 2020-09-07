@@ -9,7 +9,7 @@ const Header = ({ state }) => {
     <>
       <BrandContainer>
         <StyledLink link="/">
-          <Title><span>F/ONE</span> by awsm</Title>
+          <Title><span>F1</span> by awsm</Title>
         </StyledLink>
         <MobileMenu />
       </BrandContainer>
@@ -29,6 +29,7 @@ const BrandContainer = styled.div`
 
 const Title = styled.div`
   margin: 0;
+  font-size: 20px;
   span {
     font-weight:800;
   }
