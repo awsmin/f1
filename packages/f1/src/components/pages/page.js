@@ -56,7 +56,8 @@ const Title = styled.h1`
  * selectors to style that HTML.
  */
 const Content = styled.div`
-  word-break: break-word;
+  word-break: break-word;  
+  
   * {
     max-width: 1035px;
     width: 100%;
@@ -105,7 +106,12 @@ const Content = styled.div`
   .wp-block-button__link {
     color:var(--white);
   }
-
+  @media (max-width: 992px) {
+    .wp-block-columns {
+      padding-left: 15px;
+      padding-right:15px;
+    }    
+  }
 
   /* Input fields styles */
 

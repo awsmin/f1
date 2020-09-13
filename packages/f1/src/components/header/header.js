@@ -24,7 +24,11 @@ export default connect(Header);
 const BrandContainer = styled.div`
   box-sizing: border-box;
   color: var(--brand);
-  display: flex;
+  width: 100%;
+  @media (min-width: 768px) {
+    display: flex;
+    width: auto;
+  }
 `;
 
 const Title = styled.div`

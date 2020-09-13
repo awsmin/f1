@@ -102,7 +102,6 @@ const DateWrapper = styled.p`
  */
 const Content = styled.div`
   word-break: break-word;
-
   * {
     max-width: 771px;
     width: 100%;
