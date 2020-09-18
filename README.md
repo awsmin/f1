@@ -9,9 +9,9 @@ A starter theme for Frontity with support for common Gutenberg WordPress editor 
 ## Table of contents
 
 <!-- toc -->
+
 - [Quick install](#quick-install)
 - [Advanced usage](#advanced-usage)
-- [Usage](#usage)
 - [Gutenberg](#gutenberg)
 - [Bootstrap](#bootstrap)
 - [WP Job Openings](#wp-job-openings)
