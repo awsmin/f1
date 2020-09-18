@@ -9,7 +9,7 @@ A starter theme for Frontity with support for common Gutenberg WordPress editor 
 ## Table of contents
 
 <!-- toc -->
-- [Quick intall](#quick-intall)
+- [Quick install](#quick-install)
 - [Advanced usage](#advanced-usage)
 - [Usage](#usage)
 - [Gutenberg](#gutenberg)
@@ -20,7 +20,7 @@ A starter theme for Frontity with support for common Gutenberg WordPress editor 
 
 <!-- tocstop -->
 
-## Quick intall
+## Quick install
 
  - Create a Frontity project named `awsm-project` with **AWSM F1 theme**
  
