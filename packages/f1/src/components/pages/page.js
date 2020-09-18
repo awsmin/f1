@@ -81,7 +81,7 @@ const Content = styled.div`
   figure {
     margin: 24px auto;
     /* next line overrides an inline style of the figure element. */
-    width: 100% !important;
+    // width: 100% !important;
 
     figcaption {
       font-size: 0.7em;
@@ -90,11 +90,11 @@ const Content = styled.div`
 
   iframe {
     display: block;
-    margin: auto;
+    margin: 0 auto;
   }
 
   blockquote {
-    margin: 16px 0;
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.1);
     border-left: 4px solid rgba(12, 17, 43);
     padding: 4px 16px;
@@ -105,6 +105,28 @@ const Content = styled.div`
   }
   .wp-block-button__link {
     color:var(--white);
+  }
+  .wp-block-embed {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    margin: 1.5rem auto;
+    .wp-block-embed__wrapper {
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+      }
+    }
+    iframe {
+      max-width: 100%;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 0;
+    }
   }
   @media (max-width: 992px) {
     .wp-block-columns {

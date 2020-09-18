@@ -1,4 +1,3 @@
-
 # AWSM F1 - Frontity theme
 
 A starter theme for Frontity with support for common Gutenberg WordPress editor blocks. You could use the theme package as a starting point to build your next corporate website or blog.
@@ -10,8 +9,8 @@ A starter theme for Frontity with support for common Gutenberg WordPress editor 
 ## Table of contents
 
 <!-- toc -->
-
-- [Install](#install)
+- [Quick intall](#quick-intall)
+- [Advanced usage](#advanced-usage)
 - [Usage](#usage)
 - [Gutenberg](#gutenberg)
 - [Bootstrap](#bootstrap)
@@ -21,13 +20,25 @@ A starter theme for Frontity with support for common Gutenberg WordPress editor 
 
 <!-- tocstop -->
 
-## Install
+## Quick intall
+
+ - Create a Frontity project named `awsm-project` with **AWSM F1 theme**
+ 
+```sh
+npx frontity create --theme @awsmin/f1 awsm-project
+```
+ -  The CLI will run its part and once completed, run the project and have fun! 🎉
+```sh
+cd awsm-project && npx frontity dev
+```
+
+![AWSM F1 quick install](https://github.com/awsmin/f1/raw/master/assets/awsm-f1-quick-install.png)
+
+## Advanced usage
 
 ```sh
 npm i @awsmin/f1
 ```
-
-## Usage
 
 Once installed it should be included in your `frontity.settings.js`.
 The theme options can be specified in the `state.theme` property.
