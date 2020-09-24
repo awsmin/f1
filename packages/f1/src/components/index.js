@@ -98,7 +98,7 @@ const globalStyles = css`
   #root {
     display:flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
   }
   .container {
     max-width: 1200px;
