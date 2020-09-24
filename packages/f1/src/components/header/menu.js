@@ -37,12 +37,15 @@ const MenuToggle = styled.button`
   width: 40px;
   display: none;
   outline:0;
+  box-sizing: content-box;
+  padding: 0;
   transition: all 0.3s ease;
   &:focus {
     outline:0;
   }
   .opensvg, .closesvg {
     transition: all 0.3s ease;
+    display:block;
   }
   &:hover {
     .opensvg {
@@ -53,9 +56,11 @@ const MenuToggle = styled.button`
     }
   }
   @media (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    padding: 10px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
   }
 `;
 
