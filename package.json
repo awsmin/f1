@@ -1,0 +1,29 @@
+{
+  "name": "f1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AWSM F1 theme for Frontity project",
+  "keywords": [
+    "frontity",
+    "awsm"
+  ],
+  "scripts": {
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve"
+  },
+  "homepage": "https://github.com/awsmin/f1#readme",
+  "license": "GPL-2.0-or-later",
+  "author": "Awsm Innovations",
+  "prettier": {},
+  "dependencies": {
+    "@awsmin/f1": "./packages/f1",
+    "@awsmin/frontity-wp-job-openings": "^1.1.0",
+    "@frontity/core": "^1.7.3",
+    "@frontity/html2react": "^1.3.5",
+    "@frontity/tiny-router": "^1.2.1",
+    "@frontity/wp-source": "^1.8.2",
+    "frontity": "^1.11.1",
+    "frontity-contact-form-7": "^0.1.7"
+  }
+}
