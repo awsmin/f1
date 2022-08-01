@@ -32,7 +32,8 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://staging2.awsm.in/fone/wp-json",
+          api: "https://staging2.awsm.in/fone/wp-json",
+          url: "https://staging2.awsm.in/fone",
           "homepage": "/home",
           "postsPage":"/blog"
         }
@@ -40,7 +41,7 @@ const settings = {
     },
     "@frontity/tiny-router",
     "@frontity/html2react",
-    "frontity-contact-form-7",
+    // "frontity-contact-form-7",
     "@awsmin/frontity-wp-job-openings"
   ]
 };

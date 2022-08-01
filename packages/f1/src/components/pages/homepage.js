@@ -12,9 +12,7 @@ const HomePage = ({ state, actions, libraries }) => {
 
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
-  //const BannerSlider = homepage.acf.banner_slider; 
  
-
   useEffect(() => {
     actions.source.fetch("/");
     List.preload();
